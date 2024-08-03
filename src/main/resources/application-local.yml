@@ -1,0 +1,45 @@
+server:
+  port: 9000
+spring:
+  application:
+    name: student-perfomance-prediction
+  datasource:
+    url: jdbc:postgresql://localhost:5432/student-perfomance
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: "Munashe056"
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: kasumbamunashe@gmail.com
+    password: "xgya hlcv zjzr fjx"
+    test-connection: true
+    properties:
+      mail:
+        smtp:
+          ssl:
+            trust: smtp.gmail.com
+          starttls:
+            enable: true
+            auth: true
+    transport:
+      protocol: smtp
+
+  #
+
+  gateway:
+    url: http://196.43.100.53:8901/teleoss/sendsms.jsp
+
+  sms:
+    username: Te
+    password: TestAcc
+    senderId: Test Account
+    accountusagetypeid: 1
+    unicode: 0
+    isallowduplicatemobile: yes
